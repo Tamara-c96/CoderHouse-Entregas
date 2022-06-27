@@ -1,5 +1,5 @@
 class Cliente{
-	perfil(usuario , monto , cuotas){
+	constructor(usuario , monto , cuotas){
 		this.usuario = usuario;
 		this.monto = monto;
 		this.cuotas = cuotas;
@@ -110,9 +110,7 @@ let perfil_Cliente = new Cliente (usuario,monto,cuotas);
 compraCliente.push(perfil_Cliente);
 
 //Finalizar compra
-let finalizarCompra=prompt("Desea finalizar su compra");
-
-
+let finalizarCompra=prompt("Si desea finalizar su compra, escriba SI");
 
 if (finalizarCompra=="SI"||finalizarCompra=="si") {
 		console.log("Su pago de ",monto+interes_cuotas(monto), " fue realizado")
@@ -121,17 +119,13 @@ if (finalizarCompra=="SI"||finalizarCompra=="si") {
 }
 
 
-
-//console.log("Hizo su pago en :",cuotas,"cuotas");
-//console.log("El interes es de :",interes_cuotas(montoUsuario));
-//console.log("Precio total de su compra con tarjeta es de :",montoUsuario+interes_cuotas(montoUsuario));
-
-
+for (let clientes of compraCliente) {
+	console.log(clientes);
+}
 
 for (const ultimaCompra of compraCliente) {
 	console.log("Usuario: " ,ultimaCompra.usuario);
     console.log("Su compra fue de :$" ,ultimaCompra.monto);
     console.log("Hizo su pago en: " ,ultimaCompra.cuotas);
     console.log("<--------->");
-
 }

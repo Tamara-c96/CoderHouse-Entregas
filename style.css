@@ -13,6 +13,19 @@ p{
     font-weight: bold;
 }
 
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
 /****Nav****/
 nav{
     background-image: url(./Imagenes/iconos/fondo.png);
@@ -58,33 +71,50 @@ nav{
 header{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center ;
     height: 120px;
     background-color: #1f1e1e;
 }
+
 
 .divHeader{
     text-align: center;
 }
 
+input{
+    height: 30px;
+    width: 500px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 3.5px solid #2366be;
+    background-image: url(./Imagenes/iconos/55afc5b50590965e03ff9e389f4afd79-icono-de-trazo-de-lupa-rosa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 50px;
+    
+}
+
+
 .imgheader{
     width: 50px;
+    height: 45px;
 }
 
 /****Main****/
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 2100px;
 }
 
-.divCentrado{
+#divCentrado{
     display: grid;
     grid-template-columns: repeat(3,255px);
     row-gap: 110px;
     column-gap: 60px;
-   
 }
 
 .imgdiv{

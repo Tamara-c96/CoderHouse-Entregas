@@ -14,18 +14,6 @@ p{
 }
 
 
-/**/
-
-
-
-
-
-
-
-
-
-
-
 /****Nav****/
 nav{
     background-image: url(./Imagenes/iconos/fondo.png);
@@ -85,7 +73,7 @@ input{
     height: 30px;
     width: 500px;
     font-size: 18px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 3.5px solid #2366be;
     background-image: url(./Imagenes/iconos/55afc5b50590965e03ff9e389f4afd79-icono-de-trazo-de-lupa-rosa.png);
     background-size: contain;
@@ -123,9 +111,7 @@ main{
 }
 
 .cuadroProducto{
-    background-image: url(./Imagenes/Ilustración.jpg);
-    display: flex;
-    flex-direction: column;
+    background-color:#ffba9a;
     align-items: center;
     border: solid #3d3c3c 2px;
     padding: 0px;
@@ -134,8 +120,9 @@ main{
 
 
 .pCompra{
-    background-color: #7dd6ec ;
+    background-color: #57c3e4 ;
     text-align: center;
+    color: #2c2929;
 }
 
 /****Footer****/

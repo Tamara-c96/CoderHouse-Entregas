@@ -124,8 +124,18 @@ for (let clientes of compraCliente) {
 }
 
 for (const ultimaCompra of compraCliente) {
-	console.log("Usuario: " ,ultimaCompra.usuario);
-    console.log("Su compra fue de :$" ,ultimaCompra.monto);
-    console.log("Hizo su pago en: " ,ultimaCompra.cuotas);
-    console.log("<--------->");
+	let buscarMain=document.getElementsByTagName("main");
+	let casilla=document.createElement("article");
+
+	casilla.innerHTML=`<p>Usuario: ${ultimaCompra.usuario}</p>
+					<p>"Su compra fue de :" ${ultimaCompra.monto}</p>
+					<p>"Hizo su pago en:" ${ultimaCompra.monto}</p>`;
+	
+	buscarMain.append(parrafo);
+		
+	//console.log("Usuario: " ,ultimaCompra.usuario);
+    //console.log("Su compra fue de :$" ,ultimaCompra.monto);
+    //console.log("Hizo su pago en: " ,ultimaCompra.cuotas);
+    //console.log("<--------->");
 }
+

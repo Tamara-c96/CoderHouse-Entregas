@@ -123,16 +123,17 @@ for (let clientes of compraCliente) {
 	console.log(clientes);
 }
 
-for (const ultimaCompra of compraCliente) {
-	let buscarMain=document.getElementById("main");
-	let casilla=document.createElement("article");
+/*******************/
 
-	casilla.innerHTML=`<p>Usuario: ${ultimaCompra.usuario}</p>
+for (const ultimaCompra of compraCliente) {
+	let buscarDivDatos=document.getElementById("datos");
+
+	buscarDivDatos.innerHTML=`<p>Usuario: ${ultimaCompra.usuario}</p>
 					<p>"Su compra fue de :" ${ultimaCompra.monto}</p>
 					<p>"Hizo su pago en:" ${ultimaCompra.monto}</p>`;
 	
 	
-		buscarMain[0].appendChild(casilla);
+					
 	//console.log("Usuario: " ,ultimaCompra.usuario);
     //console.log("Su compra fue de :$" ,ultimaCompra.monto);
     //console.log("Hizo su pago en: " ,ultimaCompra.cuotas);

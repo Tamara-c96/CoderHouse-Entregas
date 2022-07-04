@@ -10,46 +10,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
+<!--NAV-->   
      <nav>
         <div>
             <img class="iconoInicio" src="./Imagenes/58708746-icono-de-la-casa-azul-sobre-fondo-blanco2.png" alt="logo de inicio con forma de casa" srcset="">
             <img class="nombrePag" src="./Imagenes/iconos/nombre.png" alt="">            
         </div>
 
-
-
-            <div id="barraSuperior">
-                <div class="divMenu">
-                    <p class="pMenu">Productos</p>
-                </div>
-
-                <div class="divMenu">
-                    <p class="pMenu">Empresa</p>
-                </div>
-
-                <div class="divMenu">
-                    <p class="pMenu">Contacto</p>
-                </div>
-
-                <div class="divMenu">
-                    <p class="pMenu">Ingresar</p>
-                </div>
+        <div id="barraSuperior">
+            <div class="divMenu">
+                <p class="pMenu">Productos</p>
             </div>
 
-            <div class="divCarrito">
-                <p>0 items / 0$ </p>
-                <img class="imgCarrito" src="./Imagenes/iconos/png-clipart-computer-icons-shopping-cart-e-commerce-shopping-cart-blue-angle.png" alt="" srcset="">
+            <div class="divMenu">
+                <p class="pMenu">Empresa</p>
             </div>
 
+            <div class="divMenu">
+                <p class="pMenu">Contacto</p>
+            </div>
 
+            <div class="divMenu">
+                <p class="pMenu">Ingresar</p>
+            </div>
+        </div>
 
-
-
+        <div class="divCarrito">
+            <p id="carritoP">0 items / 0$ </p>
+            <img class="imgCarrito" src="./Imagenes/iconos/png-clipart-computer-icons-shopping-cart-e-commerce-shopping-cart-blue-angle.png" alt="" srcset="">
+        </div>
     </nav>
-    
+<!--HEADER-->
     <header>
+        <div id="divInfoHeader">
             <div class="divHeader">
                 <img class="imgheader" src="./Imagenes/iconos/Dryvan-Icon-1-150x150.png" alt="">    
                 <p class="pHeader">Hacemos envios por CABA Y GBA.</p>
@@ -64,16 +58,17 @@
                 <img class="imgheader" src="./Imagenes/iconos/isologoVertical.png" alt="">
                 <p class="pHeader">Aceptamos Mercado Pago</p>
             </div>
-    </header>
+        </div>
 
-
-
-
-    <main>
         <div class="barraMenu">
             <input type="text" name="search" placeholder="Buscar producto"  id="menuBusqueda">
-        </div>  
-
+        </div>
+    </header>
+<!--ASIDE-->
+    <aside id="datos"></aside>
+<!--MAIN-->
+    <main>
+          
         <div id="divCentrado">
             <div class="cuadroProducto">
                 <img class="imgdiv" src="./Imagenes/2baa8a2edc4f4b5e46488caf81f2df13.jpg" alt="">
@@ -163,14 +158,12 @@
                 <p class="pCompra">COMPRAR</p>
             </div>
 
-            <div id="datos">
-
             </div>
         </div>
     </main>
     
 
-
+<!--FOOTER-->
     <footer>
         <div class="divFooter">
             <p class="pFooter">Contacto</p>
@@ -187,6 +180,6 @@
 
     </footer>
 
-        <script src="./miarchivo.js"></script>
+    <script src="./miarchivo.js"></script>
 </body>
 </html>

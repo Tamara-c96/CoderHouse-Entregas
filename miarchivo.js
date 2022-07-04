@@ -140,3 +140,9 @@ for (const ultimaCompra of compraCliente) {
     //console.log("<--------->");
 }
 
+//
+
+
+
+
+

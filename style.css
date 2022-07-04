@@ -12,8 +12,8 @@ p{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
-
 
 /****Nav****/
 nav{
@@ -76,18 +76,18 @@ header{
     text-align: center;
 }
 
-.barraMenu{
+.divBuscador{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-input{
+#barraMenu{
     height: 30px;
     width: 500px;
     font-size: 18px;
     border-radius: 10px;
-    border: 3.5px solid #2366be;
+    border: 3px solid #2366be;
     background-image: url(./Imagenes/iconos/55afc5b50590965e03ff9e389f4afd79-icono-de-trazo-de-lupa-rosa.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,6 +141,9 @@ main{
     color: #2c2929;
 }
 
+.pCompra:hover{
+    background-color:#857cff;
+}
 /****Footer****/
 footer{
     height: 200px;

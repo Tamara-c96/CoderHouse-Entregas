@@ -130,7 +130,7 @@ for (const ultimaCompra of compraCliente) {
 
 	buscarDivDatos.innerHTML=`<p>Usuario: ${ultimaCompra.usuario}</p>
 					<p>"Su compra fue de :" ${ultimaCompra.monto}</p>
-					<p>"Hizo su pago en:" ${ultimaCompra.monto}</p>`;
+					<p>"Hizo su pago en:" ${ultimaCompra.cuotas}</p>`;
 	
 	
 					

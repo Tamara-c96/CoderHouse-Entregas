@@ -110,6 +110,7 @@ let perfil_Cliente = new Cliente (usuario,monto,cuotas);
 compraCliente.push(perfil_Cliente);
 
 //Finalizar compra
+/*
 let finalizarCompra=prompt("Si desea finalizar su compra, escriba SI");
 
 if (finalizarCompra=="SI"||finalizarCompra=="si") {
@@ -117,6 +118,8 @@ if (finalizarCompra=="SI"||finalizarCompra=="si") {
 	} else {
 			console.log("Compra cancelada")
 }
+*/
+
 
 
 for (let clientes of compraCliente) {
@@ -131,18 +134,22 @@ for (const ultimaCompra of compraCliente) {
 	buscarDivDatos.innerHTML=`<p>Usuario: ${ultimaCompra.usuario}</p>
 					<p>"Su compra fue de :" ${ultimaCompra.monto}</p>
 					<p>"Hizo su pago en:" ${ultimaCompra.cuotas}</p>`;
-	
-	
-					
-	//console.log("Usuario: " ,ultimaCompra.usuario);
-    //console.log("Su compra fue de :$" ,ultimaCompra.monto);
-    //console.log("Hizo su pago en: " ,ultimaCompra.cuotas);
-    //console.log("<--------->");
 }
 
-//
+/*********************/
 
+let modoOscuro=document.getElementById("oscuro");
 
+modoOscuro.addEventListener("click",function () {
+	modoOscuro.innerText="Modo claro" ;
 
+	let divInfoHeader=document.getElementById("divInfoHeader");
+	let footer=document.querySelector("footer");
+	let body=document.querySelector("body");
+	
+	body.style.backgroundColor="#2c2929";
+	footer.style.backgroundColor="#eb6f8e";
+	divInfoHeader.style.backgroundColor="#eb6f8e";	
+})
 
 

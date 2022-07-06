@@ -5,13 +5,13 @@
 
 body{
     background-color:#eb6f8e;
-  
 }
 
 p{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -102,7 +102,6 @@ input{
 
 /***Aside***/
 aside{
-    
     width: 300px;
     background-color: #ffffff;
 }
@@ -141,6 +140,10 @@ main{
     color: #2c2929;
 }
 
+.pCompra:hover{
+    background-color:#857cff;
+}
+
 /****Footer****/
 footer{
     height: 200px;
@@ -160,4 +163,8 @@ footer{
 .pFooter , .pHeader{
     color: #ffffff;
     text-align: center;
+}
+
+a{
+    text-decoration: none;
 }

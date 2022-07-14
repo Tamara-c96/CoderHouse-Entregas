@@ -84,53 +84,64 @@ let mercaderia =[
 				}
 ];
 
-function interes_cuotas(monto){
-	if(cuotas==3){
-		return monto *3;
-	}
-	else if (cuotas==6){
-		return monto *6;
-	}
-	else if (cuotas==12){
-		return monto * 9;
-	}
-	else{
-        console.log("Cuotas incorrectas");	
-    }
-}
-
-//Monto de carro de compra
 let compraCliente =[];
 
-//Proceso de compra de un usuario
-//let usuario=prompt("Ingrese nombre de usuario");
+//let perfil_Cliente = new Cliente (usuario,monto,cuotas);
+//compraCliente.push(perfil_Cliente);
 
-//let monto=parseInt(prompt("Monto total de su compra"));
-//let cuotas=parseInt(prompt("Seleccione las cuotas 3 - 6 - 12"));
-
-//
-
-let perfil_Cliente = new Cliente (usuario,monto,cuotas);
-compraCliente.push(perfil_Cliente);
-
-
-
-for (let clientes of compraCliente) {
-	console.log(clientes);
-}
 
 /*******************/
 
-for (const ultimaCompra of compraCliente) {
-	let buscarDivDatos=document.getElementById("datos");
+let boton_comprar=document.querySelectorAll(".aCompra");
 
-	buscarDivDatos.innerHTML=`<p>Usuario: ${ultimaCompra.usuario}</p>
-					<p>"Su compra fue de :" ${ultimaCompra.monto}</p>
-					<p>"Hizo su pago en:" ${ultimaCompra.cuotas}</p>`;
+for (let botones of boton_comprar){
+	botones.addEventListener("click", agregar_compra);
 }
 
-/*********************/
+console.log(boton_comprar)
 
+
+function agregar_compra(e) {
+	let boton = e.target;
+	let cuadroProducto = boton.parentNode;
+
+
+	let productoNombre=cuadroProducto.querySelector(".productoNombre").textContent;
+	console.log(productoNombre);
+}
+
+
+/*
+function mostrar_carrito( producto ){
+	let fila = document.createElement("tr");
+	fila.innerHTML = `<td><img src="${producto.img}"></td>
+	<td>${producto.nombre}</td>
+	<td>${producto.cantidad}</td>
+	<td>${producto.precio}</td>
+	<td><button class="borrar_elemento">Borrar</buttton></td>`;
+
+	let body_tabla = document.getElementById("tbody");
+	body_tabla.append( fila );
+
+	let botones_borrar = document.querySelectorAll(".borrar_elemento");
+
+	for(let boton of botones_borrar){
+        /*cuando se haga click llamo a "borrar_producto"*/
+        /**boton.addEventListener("click" , borrar_producto);}}**/
+
+
+/*function borrar_producto(e){
+
+    let boton = e.target;
+    let cuadroProducto = boton.parentNode.parentNode;
+
+    cuadroProducto.remove();
+
+}*/
+
+
+/********modo oscuro*************/
+/*
 let modoOscuro=document.getElementById("oscuro");
 
 modoOscuro.addEventListener("click",function () {
@@ -145,4 +156,8 @@ modoOscuro.addEventListener("click",function () {
 	divInfoHeader.style.backgroundColor="#eb6f8e";	
 })
 
+*/
+
+
+/***************/
 

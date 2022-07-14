@@ -139,6 +139,8 @@ main{
 }
 
 .cuadroProducto{
+    display: flex;
+    flex-direction: column;
     height: 400px;
     background-color:#ffba9a;
     align-items: center;
@@ -146,6 +148,8 @@ main{
     border: solid #3d3c3c 2px;
     padding: 0px;
 }
+
+
 
 .aCompra{
     background-color: #57c3e4 ;

@@ -4,6 +4,10 @@ class Cliente{
 		this.monto = monto;
 		this.cuotas = cuotas;
 	}
+
+	carrito(montoCarrito){
+		this.montoCarrito=montoCarrito;
+	}
 }
 
 let mercaderia =[
@@ -99,26 +103,15 @@ function interes_cuotas(monto){
 let compraCliente =[];
 
 //Proceso de compra de un usuario
-let usuario=prompt("Ingrese nombre de usuario");
+//let usuario=prompt("Ingrese nombre de usuario");
 
-let monto=parseInt(prompt("Monto total de su compra"));
-let cuotas=parseInt(prompt("Seleccione las cuotas 3 - 6 - 12"));
+//let monto=parseInt(prompt("Monto total de su compra"));
+//let cuotas=parseInt(prompt("Seleccione las cuotas 3 - 6 - 12"));
 
 //
 
 let perfil_Cliente = new Cliente (usuario,monto,cuotas);
 compraCliente.push(perfil_Cliente);
-
-//Finalizar compra
-/*
-let finalizarCompra=prompt("Si desea finalizar su compra, escriba SI");
-
-if (finalizarCompra=="SI"||finalizarCompra=="si") {
-		console.log("Su pago de ",monto+interes_cuotas(monto), " fue realizado")
-	} else {
-			console.log("Compra cancelada")
-}
-*/
 
 
 

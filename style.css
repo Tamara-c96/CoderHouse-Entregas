@@ -5,6 +5,7 @@
 
 body{
     background-color:#eb6f8e;
+   
 }
 
 p{
@@ -61,7 +62,7 @@ nav{
 header{
     display: flex;
     flex-direction: column;
-    height: 136px;
+    height: 220px;
 }
 
 #divInfoHeader{
@@ -80,6 +81,13 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+#equisRosa{
+    width: 28px;
+    position: absolute;
+    right: 525px;
+    margin-top: 4px;
 }
 
 input{
@@ -102,18 +110,23 @@ input{
 
 /***Aside***/
 aside{
-    width: 300px;
+    width: 400px;
+    height:1000px ;
     background-color: #ffffff;
 }
 
 /****Main****/
+
 main{
+    padding-top: 80px;
+    width: 1500px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 2000px;
+    flex-direction:row-reverse ;
+    justify-content: space-evenly;
+    height: 2500px;
 }
+
+
 
 #divCentrado{
     display: grid;

@@ -119,20 +119,18 @@ aside{
 
 main{
     padding-top: 80px;
-    width: 1500px;
+    width:auto ;
     display: flex;
     flex-direction:row-reverse ;
     justify-content: space-evenly;
-    height: 2500px;
+    height: 2100px;
 }
-
-
 
 #divCentrado{
     display: grid;
     grid-template-columns: repeat(3,255px);
-    row-gap: 110px;
-    column-gap: 60px;
+    grid-template-rows: repeat(5,500px);
+    column-gap: 50px;
 }
 
 .imgdiv{
@@ -141,19 +139,24 @@ main{
 }
 
 .cuadroProducto{
+    height: 400px;
     background-color:#ffba9a;
     align-items: center;
+    justify-content: center;
     border: solid #3d3c3c 2px;
     padding: 0px;
 }
 
-.pCompra{
+.aCompra{
     background-color: #57c3e4 ;
-    text-align: center;
     color: #2c2929;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.pCompra:hover{
+.aCompra:hover{
     background-color:#857cff;
 }
 

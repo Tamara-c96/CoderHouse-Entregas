@@ -146,11 +146,26 @@ function carro( producto ){
 	fila.innerHTML=`<td><img class="miniImgs" src="${producto.img}"></td>	
 					<td>${producto.nombre}</td>
 					<td>${producto.precio}</td>
-					<td><button class="borrar_elemento">Borrar</buttton></td>`;
+					<td><button class="borrar">Borrar</buttton></td>`;
 
 	let tabla = document.getElementById("tbody");
 	tabla.append(fila);
 
+	let boton_borrar=document.querySelectorAll(".borrar");
+
+	for (let borra of boton_borrar) {
+		borra.addEventListener("click", quitar_producto);
+	}
+
+
 };
+
+function quitar_producto(e) {
+	let boton = e.target;
+	let cuadroProducto = boton.parentNode.parentNode;
+
+	cuadroProducto.remove();
+}
+
 
 

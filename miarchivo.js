@@ -91,6 +91,14 @@ let mercaderia =[
 
 let carrito =[];
 
+/******************/
+
+let xRosa=document.getElementById("equisRosa");
+
+xRosa.addEventListener("click",function () {
+
+})
+
 /*******************/
 
 let boton_comprar=document.querySelectorAll(".aCompra");
@@ -135,8 +143,7 @@ function agregar_compra(e) {
 
 function carro( producto ){
 	let fila = document.createElement("tr");
-	fila.innerHTML=`<td><img src="${producto.img}"></td>
-					<td>${producto.img}</td>	
+	fila.innerHTML=`<td><img src="${producto.img}"></td>	
 					<td>${producto.nombre}</td>
 					<td>${producto.precio}</td>
 					<td><button class="borrar_elemento">Borrar</buttton></td>`;
@@ -145,3 +152,4 @@ function carro( producto ){
 	tabla.append(fila);
 
 };
+

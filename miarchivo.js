@@ -156,9 +156,7 @@ function carro( producto ){
 	for (let borra of boton_borrar) {
 		borra.addEventListener("click", quitar_producto);
 	}
-
-
-};
+}
 
 function quitar_producto(e) {
 	let boton = e.target;

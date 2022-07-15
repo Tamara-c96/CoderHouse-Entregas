@@ -3,6 +3,11 @@
     margin: 0px;
 }
 
+.miniImgs{
+    height: 100px;
+    width: 100px;
+}
+
 body{
     background-color:#eb6f8e;
    
@@ -111,7 +116,7 @@ input{
 /***Aside***/
 aside{
     width: 400px;
-    height:1000px ;
+    height: 1900px;
     background-color: #ffffff;
 }
 

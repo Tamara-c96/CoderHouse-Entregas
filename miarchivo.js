@@ -143,7 +143,7 @@ function agregar_compra(e) {
 
 function carro( producto ){
 	let fila = document.createElement("tr");
-	fila.innerHTML=`<td><img src="${producto.img}"></td>	
+	fila.innerHTML=`<td><img class="miniImgs" src="${producto.img}"></td>	
 					<td>${producto.nombre}</td>
 					<td>${producto.precio}</td>
 					<td><button class="borrar_elemento">Borrar</buttton></td>`;
@@ -152,4 +152,5 @@ function carro( producto ){
 	tabla.append(fila);
 
 };
+
 

@@ -84,11 +84,12 @@ let mercaderia =[
 				}
 ];
 
-let compraCliente =[];
-
 //let perfil_Cliente = new Cliente (usuario,monto,cuotas);
 //compraCliente.push(perfil_Cliente);
 
+
+
+let carrito =[];
 
 /*******************/
 
@@ -107,57 +108,40 @@ function agregar_compra(e) {
 
 
 	let productoNombre=cuadroProducto.querySelector(".productoNombre").textContent;
-	console.log(productoNombre);
+	let productoPrecio=cuadroProducto.querySelector(".productoPrecio").textContent;
+	let productoImagen=cuadroProducto.querySelector(".imgProducto").src;
+
+
+	let producto = {
+        nombre: productoNombre,
+        img: productoImagen,
+        precio: productoPrecio,
+        cantidad:1
+    };
+
+
+
+	carrito.push(producto);
+
+	let producto_JSON = JSON.stringify(producto);
+
+	carrito.push(producto_JSON);
+
+	localStorage.setItem("producto" , carrito);
+	
+	carro(producto);
 }
 
 
-/*
-function mostrar_carrito( producto ){
+function carro( producto ){
 	let fila = document.createElement("tr");
-	fila.innerHTML = `<td><img src="${producto.img}"></td>
-	<td>${producto.nombre}</td>
-	<td>${producto.cantidad}</td>
-	<td>${producto.precio}</td>
-	<td><button class="borrar_elemento">Borrar</buttton></td>`;
+	fila.innerHTML=`<td><img src="${producto.img}"></td>
+					<td>${producto.img}</td>	
+					<td>${producto.nombre}</td>
+					<td>${producto.precio}</td>
+					<td><button class="borrar_elemento">Borrar</buttton></td>`;
 
-	let body_tabla = document.getElementById("tbody");
-	body_tabla.append( fila );
+	let tabla = document.getElementById("tbody");
+	tabla.append(fila);
 
-	let botones_borrar = document.querySelectorAll(".borrar_elemento");
-
-	for(let boton of botones_borrar){
-        /*cuando se haga click llamo a "borrar_producto"*/
-        /**boton.addEventListener("click" , borrar_producto);}}**/
-
-
-/*function borrar_producto(e){
-
-    let boton = e.target;
-    let cuadroProducto = boton.parentNode.parentNode;
-
-    cuadroProducto.remove();
-
-}*/
-
-
-/********modo oscuro*************/
-/*
-let modoOscuro=document.getElementById("oscuro");
-
-modoOscuro.addEventListener("click",function () {
-	modoOscuro.innerText="Modo claro" ;
-
-	let divInfoHeader=document.getElementById("divInfoHeader");
-	let footer=document.querySelector("footer");
-	let body=document.querySelector("body");
-	
-	body.style.backgroundColor="#2c2929";
-	footer.style.backgroundColor="#eb6f8e";
-	divInfoHeader.style.backgroundColor="#eb6f8e";	
-})
-
-*/
-
-
-/***************/
-
+};

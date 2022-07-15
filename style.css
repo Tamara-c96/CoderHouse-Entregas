@@ -96,7 +96,7 @@ input{
     font-size: 18px;
     border-radius: 10px;
     border: 3.5px solid #2366be;
-    background-image: url(./Imagenes/iconos/55afc5b50590965e03ff9e389f4afd79-icono-de-trazo-de-lupa-rosa.png);
+    background-image: url(./Imagenes/iconos/lupa-rosa.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 10px;
@@ -133,7 +133,7 @@ main{
     column-gap: 50px;
 }
 
-.imgdiv{
+.imgProducto{
     width: 250px;
     height: 300px;
 }

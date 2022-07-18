@@ -93,11 +93,7 @@ let carrito =[];
 
 /******************/
 
-let xRosa=document.getElementById("equisRosa");
 
-xRosa.addEventListener("click",function () {
-
-})
 
 /*******************/
 

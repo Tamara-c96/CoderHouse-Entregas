@@ -91,7 +91,16 @@ aside{
     width: 400px;
     height: 1900px;
     background-color: #ffffff;
+    border: 3px solid rgb(53, 48, 48)  ;
+    border-radius: 10px;
 }
+
+h2{
+    text-align: center;
+}
+
+
+
 
 /****Main****/
 #mainIndex{

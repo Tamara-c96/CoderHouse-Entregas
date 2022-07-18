@@ -12,6 +12,18 @@ body{
     background-color:#eb6f8e;  
 }
 
+.body-ingresar{
+    background-color: #ffffff;
+    background-image: url(./Imagenes/wallpaper_ingresar.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#mainContacto{
+    background-image: url(./Imagenes/wallpaper-contacto.jpg);
+    background-size:auto ;
+}
+
 p{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -157,9 +169,6 @@ h3{
     align-items: center;
     width: 800px;
     height: 450px;
-    background-image: url(./Imagenes/wallpaper_ingresar.png);
-    background-size:contain ;
-    background-repeat: no-repeat;
 }
 
 .divInput{

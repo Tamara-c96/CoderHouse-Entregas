@@ -93,6 +93,10 @@ let carrito =[];
 
 /******************/
 
+let inputNombre=document.getElementById("nombreUsuario");
+let inputContras=document.getElementById("nombreContraseña");
+
+let ingresarIncompleto= inputNombre == "" || inputContras==""? console.log("vacio") : console.log("lleno") ;
 
 
 /*******************/

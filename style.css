@@ -94,10 +94,31 @@ aside{
 }
 
 /****Main****/
+#mainIndex{
+    padding-top: 80px;
+    width:auto ;
+    display: flex;
+ ;
+    justify-content: space-evenly;
+    height: 800px;
+    background-image: url(./Imagenes/wallpaper_amarillo2_index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #mainIngresar{
     width:auto ;
     height: 600px;
     margin-top: 15px;
+}
+
+#mainProductos{
+    padding-top: 80px;
+    width:auto ;
+    display: flex;
+    flex-direction:row-reverse ;
+    justify-content: space-evenly;
+    height: 2100px;
 }
 
 h3{
@@ -118,17 +139,9 @@ h3{
     background-repeat: no-repeat;
 }
 
-#mainProductos{
-    padding-top: 80px;
-    width:auto ;
-    display: flex;
-    flex-direction:row-reverse ;
-    justify-content: space-evenly;
-    height: 800px;
-    background-image: url(./Imagenes/wallpaper_amarillo2_index.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
+
+
 
 #divCentrado{
     display: grid;

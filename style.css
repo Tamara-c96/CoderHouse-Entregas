@@ -9,8 +9,7 @@
 }
 
 body{
-    background-color:#eb6f8e;
-   
+    background-color:#eb6f8e;  
 }
 
 p{
@@ -67,7 +66,7 @@ nav{
 header{
     display: flex;
     flex-direction: column;
-    height: 220px;
+    height: 120px;
 }
 
 #divInfoHeader{
@@ -80,32 +79,6 @@ header{
 
 .divHeader{
     text-align: center;
-}
-
-.barraMenu{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-#equisRosa{
-    width: 28px;
-    position: absolute;
-    right: 525px;
-    margin-top: 4px;
-}
-
-input{
-    height: 30px;
-    width: 500px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 3.5px solid #2366be;
-    background-image: url(./Imagenes/iconos/lupa-rosa.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 10px;
-    padding-left: 50px;
 }
 
 .imgheader{
@@ -121,8 +94,31 @@ aside{
 }
 
 /****Main****/
+#mainIngresar{
+    width:auto ;
+    height: 600px;
+    margin-top: 15px;
+}
 
-main{
+h3{
+    color: #2c2929;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight:900 ;
+}
+
+.wallIngresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+    background-image: url(./Imagenes/wallpaper_ingresar.png);
+    background-size:contain ;
+    background-repeat: no-repeat;
+}
+
+#mainProductos{
     padding-top: 80px;
     width:auto ;
     display: flex;

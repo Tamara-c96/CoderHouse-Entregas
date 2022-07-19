@@ -28,7 +28,7 @@ p{
 }
 
 
-/****Nav****/
+/********NAV********/
 nav{
     background-image: url(./Imagenes/fondos/fondo.png);
     display: flex;
@@ -85,7 +85,7 @@ nav{
     --_p: 100%
 }
 
-/****Header****/
+/********HEADER********/
 header{
     display: flex;
     flex-direction: row;
@@ -104,20 +104,14 @@ header{
     height: 45px;
 }
 
-/***Aside***/
-aside{
-    width: 400px;
-    height: 1900px;
-    background-color: #ffffff;
-    border: 3px solid rgb(53, 48, 48)  ;
-    border-radius: 10px;
-}
+/****ASIDE*******/
+
 
 h2{
     text-align: center;
 }
 
-/****Main****/
+/****MAIN-INDEX****/
 #mainIndex{
     padding-top: 80px;
     width:auto ;
@@ -127,48 +121,6 @@ h2{
     background-image: url(./Imagenes/fondos/wallpaper_amarillo2_index.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-#mainIngresar{
-    width:auto ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    margin-top: 15px;
-}
-
-#mainProductos{
-    padding-top: 80px;
-    width:auto ;
-    display: flex;
-    flex-direction:row-reverse ;
-    justify-content: space-evenly;
-    height: 2100px;
-}
-
-h3{
-    color: #2c2929;
-    font-family: 'Nunito', sans-serif;
-    font-size: 40px;
-    font-weight:900 ;
-}
-
-.wallIngresar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    height: 450px;
-}
-
-.divInput{
-    display: flex;
-}
-
-.ingresarBoton{
-    background-color: #7ac2d8;
 }
 
 #divPresentacion{
@@ -182,20 +134,23 @@ h3{
 #botonProds{
     border:2px solid #57c3e4 ;
 }
+/****MAIN-PRODUCTO****/
 
-h1{
-    font-family: 'Nunito', sans-serif;
-    font-weight:bold ;
-    font-size: 45px;
+#mainProductos{
+    padding-top: 80px;
+    width:auto ;
+    display: flex;
+    flex-direction:row-reverse ;
+    justify-content: space-evenly;
+    height: 2100px;
 }
 
-.pBOTON{
-    color: #1f1e1e;
-    background-color:#eb6f8e;
-    font-family: 'Nunito', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    
+aside{
+    width: 400px;
+    height: 1900px;
+    background-color: #ffffff;
+    border: 3px solid rgb(53, 48, 48)  ;
+    border-radius: 10px;
 }
 
 #divCentrado{
@@ -221,8 +176,6 @@ h1{
     padding: 0px;
 }
 
-
-
 .aCompra{
     background-color: #57c3e4 ;
     color: #2c2929;
@@ -235,9 +188,56 @@ h1{
 .aCompra:hover{
     background-color:#857cff;
 }
+/****MAIN-INGRESAR****/
+#mainIngresar{
+    width:auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin-top: 15px;
+}
 
-/****MainContacto****/
+.wallIngresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+}
 
+.pBOTON{
+    color: #1f1e1e;
+    background-color:#eb6f8e;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+h3{
+    color: #2c2929;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight:900 ;
+}
+
+.divInput{
+    display: flex;
+}
+
+.ingresarBoton{
+    background-color: #7ac2d8;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold ;
+    font-size: 45px;
+}
+
+/********MAIN-CONTACTO********/
 
 #mainContacto{
     display: flex;
@@ -255,7 +255,7 @@ h1{
 }
 
 
-/****Footer****/
+/********FOOTER********/
 footer{
     height: 200px;
     background-color: #1f1e1e;

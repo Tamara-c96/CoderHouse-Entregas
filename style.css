@@ -236,6 +236,25 @@ h1{
     background-color:#857cff;
 }
 
+/****MainContacto****/
+
+
+#mainContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    align-items: center;
+    height: 400px;
+}
+
+.divContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+}
+
+
 /****Footer****/
 footer{
     height: 200px;

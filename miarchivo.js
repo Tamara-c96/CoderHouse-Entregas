@@ -1,3 +1,5 @@
+
+  
 class Cliente{
 	constructor(usuario , monto , cuotas){
 		this.usuario = usuario;
@@ -105,6 +107,7 @@ let boton_comprar=document.querySelectorAll(".aCompra");
 
 for (let botones of boton_comprar){
 	botones.addEventListener("click", agregar_compra);
+	
 }
 
 console.log(boton_comprar)
@@ -138,6 +141,17 @@ function agregar_compra(e) {
 	localStorage.setItem("producto" , carrito);
 	
 	carro(producto);
+
+	Toastify({
+
+		text: "AGREGADO AL CARRITO",	
+		duration: 1500,
+		style:{
+			fontFamily: 'Nunito',
+			fontSize: "20px",
+		}
+		
+	}).showToast();
 }
 
 
@@ -158,12 +172,30 @@ function carro( producto ){
 	}
 }
 
+
+
+
 function quitar_producto(e) {
 	let boton = e.target;
 	let cuadroProducto = boton.parentNode.parentNode;
 
 	cuadroProducto.remove();
+
+	Toastify({
+
+		text: "SACADO DEL CARRITO",	
+		duration: 1500,
+		style:{
+			fontFamily: 'Nunito',
+			fontSize: "20px",
+		}
+		
+	}).showToast();
+
 }
 
 
+
+
+	
 

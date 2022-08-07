@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
+
 <!--NAV-->   
      <nav>
         <div>
             <a href="./index.html"><img class="iconoInicio" src="./Imagenes/iconos/icono-de-la-casa-azul-sobre-fondo-blanco2.png" alt="logo de inicio con forma de casa" srcset=""></a>
+            
             <img class="nombrePag" src="./Imagenes/iconos/nombre.png" alt="">       
         </div>
 
@@ -33,9 +36,11 @@
         </div>
 
         <div class="divCarrito">
-            <p id="carritoP">0 items / 0$ </p>
-            <img class="imgCarrito" src="./Imagenes/iconos/carrito.png" alt="" srcset="">
+            <p id="carritoP"> </p>            
+            <i class="bi bi-cart-fill"></i>                    
         </div>
+
+        
     </nav>
 <!--HEADER-->
     <header>
@@ -56,7 +61,25 @@
     </header>    
 <!--MAIN-->
     <main id="mainProductos">
+    
+    <!--carro-->    
+     <div class="divCarroProduc">        
+
+        <div class="iconoX">
+            <i class="bi bi-x-lg"></i>
+        </div>
+
+        <p class="tituloCarro">Carrito de compras</p>
+        <div class="divCarroProducVacio">
+            <p class="pVacio">El carrito de compras esta vacio.</p>
+        </div>
+
+        <p>Total : $ 0</p>
+        
+    </div>   
+    
     <!--ASIDE-->
+    <!--
         <aside id="datos">
                 <h2>Carrito de compras</h2>
                 <hr>
@@ -70,76 +93,78 @@
                 <tbody id="tbody"></tbody>
             </table>
         </aside>
+    -->
+
 
         <div id="divCentrado">
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/cartuchera.jpg" alt="">
                 <p class="productoNombre">Cartuchera</p>
                 <p class="productoPrecio"> $ 1500</p>           
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/botella-de-sake.jpeg" alt="">
                 <p class="productoNombre">Botella de Sake</p>
                 <p class="productoPrecio"> $ 4015</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">    
                 <img class="imgProducto" src="./Imagenes/peluche.jpg" alt="">    
                 <p class="productoNombre">Peluche</p>
                 <p class="productoPrecio"> $950</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/figura-nendoroid.jpg" alt="">
                 <p class="productoNombre">Figura Nendoroid</p>
                 <p class="productoPrecio"> $7000</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/cuaderno.jpg" alt="">
                 <p class="productoNombre">Cuaderno</p>
                 <p class="productoPrecio"> $ 300</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/llavero_acrilico_1.png" alt="">
                 <p class="productoNombre">Llavero Acrilico Modelo1</p>
                 <p class="productoPrecio"> $ 500</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/llavero_acrilico_2.png" alt="">
                 <p class="productoNombre">Llavero Acrilico Modelo2</p>
                 <p class="productoPrecio"> $ 500</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/funda-telefono-idol.jpg" alt="">
                 <p class="productoNombre">Funda Telefono - Idol</p>
                 <p class="productoPrecio"> $ 800</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/almohada.jpg" alt="">
                 <p class="productoNombre">Almohada</p>
                 <p class="productoPrecio"> $ 750</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/vaso-y-portavaso.jpg" alt="">
                 <p class="productoNombre">Vaso y portavaso</p>
                 <p class="productoPrecio"> $ 1200</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
 
             </div>
 
@@ -147,14 +172,14 @@
                 <img class="imgProducto" src="./Imagenes/funda-telefono.jpg" alt="">
                 <p class="productoNombre">Funda Telefono</p>
                 <p class="productoPrecio"> $ 800</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
 
             <div class="cuadroProducto">
                 <img class="imgProducto" src="./Imagenes/figura.jpg" alt="" srcset="">
                 <p class="productoNombre">Figura</p>
                 <p class="productoPrecio"> $ 10000</p>
-                <a href="#" class="aCompra">COMPRAR</a>
+                <a  class="aCompra">COMPRAR</a>
             </div>
             
         </div>
@@ -166,7 +191,7 @@
         <div class="divFooter">
             <p class="pFooter">Contacto</p>
             <p class="pFooter">Trabaja con nosotros</p>
-            <a href="#"><p class="pFooter" id="oscuro" >Modo Oscuro</p></a>
+            <a ><p class="pFooter" id="oscuro" >Modo Oscuro</p></a>
         </div>
         
         <div class="divFooter">

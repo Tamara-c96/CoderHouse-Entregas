@@ -2,6 +2,18 @@
     padding: 0px;
     margin: 0px;
 }
+/*
+.jm-loadingpage {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+    background: url(Gif/usada-pekora.gif) center no-repeat #fff;
+}
+*/
+
 
 .miniImgs{
     height: 100px;
@@ -20,16 +32,21 @@ body{
 }
 
 
-p{
+p, .pBOTON , .aCompra{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
+/*******ICONOS******/
+.iconoX{
+  font-size: 20px;
+}
 
 
 /********NAV********/
 nav{
+   
     background-image: url(./Imagenes/fondos/fondo.png);
     display: flex;
     justify-content: space-between;
@@ -39,11 +56,13 @@ nav{
 }
 .divCarrito{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items:center ;
-    height: 100px;
+    font-size: 50px;
+    color: #4967ca;
+    justify-content: center;
+    width: 150px;
 }
+
+
 
 .nombrePag{
     width: 200px;
@@ -131,25 +150,50 @@ h2{
     align-items: flex-start;
 }
 
-#botonProds{
-    border:2px solid #57c3e4 ;
-}
+
 /****MAIN-PRODUCTO****/
 
-#mainProductos{
+#mainProductos{    
     padding-top: 80px;
     width:auto ;
     display: flex;
     flex-direction:row-reverse ;
     justify-content: space-evenly;
     height: 2100px;
+    background-image: url(Imagenes/fondos/fondo-rosa.png);
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-attachment:fixed ;
+}
+
+.divCarroProduc{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 400px;
+    height: 2625px ;
+    background-color:#ccafe7;
+    visibility:visible ;
+}
+
+.tituloCarro{
+    font-size: 35px;
+    font-weight:bolder ;
+}
+
+.divCarroProducVacio{
+    background-color: #857cff;
+}
+
+.pVacio{
+    color:#353030 
 }
 
 aside{
     width: 400px;
     height: 1900px;
     background-color: #ffffff;
-    border: 3px solid rgb(53, 48, 48)  ;
+    border: 3px solid #353030  ;
     border-radius: 10px;
 }
 
@@ -162,7 +206,7 @@ aside{
 
 .imgProducto{
     width: 250px;
-    height: 300px;
+    height: 280px;
 }
 
 .cuadroProducto{
@@ -172,22 +216,37 @@ aside{
     background-color:#ffba9a;
     align-items: center;
     justify-content: center;
-    border: solid #3d3c3c 2px;
+    border: solid #673081 2px;
+    border-radius: 5px;
     padding: 0px;
 }
 
 .aCompra{
-    background-color: #57c3e4 ;
-    color: #2c2929;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    
+    border: none;
+    color: white;
+    padding: 16px 40px;
     text-align: center;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+
+    background-color: #57c3e4;
+    color: black;
+    border: 2px solid rgb(240, 127, 180);
+    border-radius: 5px;
 }
 
-.aCompra:hover{
-    background-color:#857cff;
+.aCompra:hover {
+    background-color: #857cff;;
+    color: white;
+    border: hidden;
+    border: 2px solid #57c3e4;
 }
+
+
 /****MAIN-INGRESAR****/
 #mainIngresar{
     width:auto ;
@@ -207,15 +266,47 @@ aside{
     height: 450px;
 }
 
-.pBOTON{
+
+/*.pBOTON{
     color: #1f1e1e;
     background-color:#eb6f8e;
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
-    font-weight: bold;
-    
-}
-
+    font-weight: bold;   
+}*/
+.pBOTON {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .pBOTON:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .pBOTON::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .pBOTON:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(45deg) scale(1, 1);
+  }
+/**/
 h3{
     color: #2c2929;
     font-family: 'Nunito', sans-serif;
